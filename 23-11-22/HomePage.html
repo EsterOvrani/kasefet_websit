@@ -1,0 +1,193 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>
+        עמוד הבית
+    </title>
+    <link href="styleSheet/StyleSheet.css" rel="stylesheet" />
+    <link href="styleSheet/HomeStyle.css" rel="stylesheet" />
+    <script src="javaScript/Home.js"></script>
+    <link href="styleSheet/sticky.css" rel="stylesheet" />
+    <script defer src="javaScript/General.js"></script>
+</head>
+<body dir="rtl">
+    <div id="NavHeader">
+        <nav>
+            <ul id="Navigationbarup">
+                <li><a href="BanchesPage.html" title="Banches">סניפים</a></li>
+                <li><a href="ContactPage.html" title="Contact">צור קשר</a></li>
+                <li><a href="HomePage.html" title="Home"><img src="image/HomePageImg/Background copy.png" /></a></li>
+                <li><a href="EventsPage.html" title="Events">אירועים</a></li>
+                <li><a href="TastePage.html" title="Tast">טעמים</a></li>
+            </ul>
+
+            <input type="checkbox" id="menu" />
+            <label for="menu" class="menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <navInner class="nav">
+                <ul id="bar">
+                    <li><a href="HomePage.html"> בית</a></li>
+                    <li><a href="OurStoryPage.html">אודות</a></li>
+                    <li><a href="BanchesPage.html" title="Banches">סניפים</a></li>
+                    <li><a href="ContactPage.html" title="Contact">צור קשר</a></li>
+                    <li><a href="EventsPage.html" title="Events">אירועים</a></li>
+                    <li><a href="TastePage.html" title="Tast">טעמים</a></li>
+                </ul>
+            </navInner>
+        </nav>
+
+        <header>
+            <!--<input style="background-color:aqua;background-image: url('image/HomePageImg/icons8-glyph-96.png');" type="button" value="הזמנות" />-->
+
+            <button onclick="btnDeliveriesClick()">
+                <div>
+                    <img src="image/HomePageImg/icons8-glyph-96.png" />
+                    <h style="font-size: 35px;">הזמנות</h>
+                </div>
+            </button>
+            <button onclick="btnEventsClick()">
+                <div>
+                    <img src="image/HomePageImg/icons8-cake-64.png" />
+                    <h style="font-size: 35px;">ארועים</h>
+                </div>
+            </button>
+        </header>
+    </div>
+
+    <article>
+        <section style="color: #592B17; text-align:center; flex-direction: column; ">
+            <h2>קצת עלינו</h2>
+            <p>
+                בגלידריית “קצפת” תמצאו לונה פארק של טעמים והנאה מתוקה לחך שלא ניתן לתאר במילים.
+            </p>
+            <p>
+                אצלנו תוכלו למצוא מבחר גדול של גלידות שמנת, פרוזן יוגורט ויוגורטים ייחודיים, סורבה גורמה, גלידות פרווה וגלידות ללא סוכר.
+            </p>
+            <p>
+                גלידריית קצפת, מותג ירושלמי מזה 30 שנה. המותג מציג את הרעיון ״לונה פארק של טעמים״. אצלנו תוכלו למצוא מגוון רחב של טעמים:<br />
+                גלידות שמנת • יוגורטים ייחודיים • פרוזן יוגורט • קרפ צרפתי • וופל בלגי • שייקים • שתייה חמה<br />
+                ועוד המון הפתעות מתוקות! 🎡🎂
+            </p>
+            <p>
+                *כשר למהדרין
+            </p>
+            <p>
+                אנו מתמחים בהכנת גלידות יוגורט במבחר טעמים וסוגים מיוחדים. בנוסף, תוכלו להנות משייקים ואייסים מפנקים העשויים מחומרי גלם איכותיים ובמבחר טעמים .
+            </p>
+            <input id="btnSize1" type="button" value="קראו עוד עלינו" onclick="btnOurStoryClick()" />
+        </section>
+        <section>
+            <hr />
+            <div>
+                <img src="image/HomePageImg/new-fff-894x1024.png" />
+            </div>
+            <div id="articalTextDiv">
+                <h2 style="color: #592B17;">קצפת עד הבית!</h2>
+                <p style="color: #7A7A7A;">
+                    המארזים המפנקים שלנו עם מגוון תוספות, גביעים ופינוקים בדרך אליכם.
+                </p>
+                <br />
+                <input id="btnSize2" type="button" value="לסניפים שמבצעים משלוח" onclick="btnDeliveriesClick()" />
+            </div>
+            <div id="articalTextDiv">
+                <h2 style="color: #6ec1e4;">אירועים בקצפת!</h2>
+                <p style="color: #7A7A7A;">
+                    רוצים להפוך את האירוע שלכם לבלתי נשכח ? להביא לאורחים שלכם את הדובדבן שבקצפת?
+                </p>
+                <p style="color: #7A7A7A;">
+                    אירועים עסקיים / פרטיים המלווים בחוויה יוצאת דופן עם מגוון טעמי גלידה מפנקים, עגלות אירועים מיוחדות,<br />
+                    וופל בלגי, קרפ צרפתי ושלל הפתעות מתוקות ייחודיות.
+                </p>
+                <br />
+                <input id="btnSize2" style="background-color: #E33A4B" type="button" value="לפרטים נוספים והצעות מחיר" onclick="btnEventsClick()" />
+            </div>
+            <div style="text-align:left">
+                <img src="image/HomePageImg/2-1-s1-825x1024.png" />
+            </div>
+
+        </section>
+        <section id="articalSec3" style="background-image: url('image/HomePageImg/ice_cream1.png'); margin-bottom:-1px;">
+            <div style="width:33%; margin:5% 0px;">
+                <h3 style="font-size: 36px; color:white">
+                    רוצים להוסיף קצת קצפת ליום שלכם?
+                </h3>
+                <input id="btnSize2" style="background-color: #E33A4B;" type="button" value="לסניפים שלנו" onclick="btnBanchesClick()" />
+            </div>
+        </section>
+        <section id="articalSec3" style="background-image: url('image/HomePageImg/Background1.png'); margin-top:0px; margin-bottom:0px">
+            <hr style="margin:-1px 0px; background-color: #933477" />
+            <div style="width:33%; margin:5% 0px; display:flex; flex-direction:column; align-items:center">
+                <img style="margin:10px" src="image/HomePageImg/flas-300x67.png" />
+                <img style="margin:10px" src="image/HomePageImg/with-fresh-toppings.png" />
+                <img style="width:150px; margin:10px" src="image/HomePageImg/Background copy.png" />
+            </div>
+        </section>
+        <!--<section id="sectionPic1">
+            <section style="width:100%; margin:0px; background-color:transparent; display:flex; flex-direction:column; justify-content:center; text-align:center">
+                <h3 style="font-size:36px">
+                    רוצים להוסיף קצת קצפת ליום שלכם?
+                </h3>
+                <input id="btnSize2" style="background-color: #E33A4B" type="button" value="לסניפים שלנו" />
+            </section>
+        </section>
+        <section id="sectionPic1" style="background-image: url('image/HomePageImg/9.png'); height:fit-content">
+            <section style="width:100%; margin:0px; background-color:transparent; display:flex; flex-direction:column; justify-content:center; text-align:center">
+                <img src="image/HomePageImg/flas-300x67.png" />
+                <img src="image/HomePageImg/flas.png" />
+                <img style="width:150px" src="image/HomePageImg/Background copy.png" />
+            </section>
+        </section>-->
+    </article>
+    <footer>
+        <section style="height: fit-content; margin: 0px ">
+            <img style="width:100%; height:auto; margin:0px;  display: block;" src="image/GeneralImg/small-sliftizk.jpg" />
+        </section>
+        <section>
+            <div>
+                <section style="height:15%; margin:5% 2px ; justify-content:right; align-items:center">
+                    <h3>קישורים שימושים</h3>
+                </section>
+                <section style="height: 65%; margin: 0px 2px ">
+                    <ul>
+                        <li><a href="HomePage.html" title="Contact">דף הבית</a></li>
+                        <li><a href="EventsPage.html" title="Events">אירועים</a></li>
+                        <li><a href="ContactPage.html" title="Contact">צור קשר</a></li>
+                        <li><a href="TastePage.html" title="Tast">טעמים</a></li>
+                        <li><a href="OurStoryPage.html" title="Tast">הסיפור שלנו</a></li>
+                        <li><a href="BanchesPage.html" title="Banches">סניפים</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div>
+                <section style="height:15%; margin:5% 2px ; justify-content:right; align-items:center">
+                    <h3>צרו קשר</h3>
+                </section>
+                <section style="height: 65%; margin: 0px 2px ">
+                    <ul>
+                        <li style="width: 100%;">טלפון:02-6253772</li>
+                        <li style="width: 100%;">פקס:077-5004557</li>
+                    </ul>
+                </section>
+            </div>
+            <div>
+                <section style="height:15%; margin:5% 2px ; justify-content:right; align-items:center">
+                    <h3>בקרו אותנו ברשתות החברתיות</h3>
+                </section>
+                <section style="height:65%; margin:0px 2px ">
+                    <ul>
+                        <li style="width: 100%;"><a href="HomePage.html" title="Contact">העמוד שלנו בפייסבוק</a></li>
+                        <li style="width: 100%;"><a href="HomePage.html" title="Events">העמוד שלנו באינסטגרם</a></li>
+                        <li style="width: 100%;"><a href="HomePage.html" title="Contact">גיפט כארד</a></li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+</body>
+</html>

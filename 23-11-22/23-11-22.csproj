@@ -1,0 +1,263 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1C4657CF-A818-4579-ABF9-C3003E40069C}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_23_11_22</RootNamespace>
+    <AssemblyName>23-11-22</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44385</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BanchesPage.html" />
+    <Content Include="image\ice cream.mp4" />
+    <Content Include="image\icecream-clip.mp4" />
+    <Content Include="image\ContactPageImg\sivan_shuv-ami_28.jpg" />
+    <Content Include="image\EventsPageImg\1.png" />
+    <Content Include="image\EventsPageImg\10.png" />
+    <Content Include="image\EventsPageImg\11.png" />
+    <Content Include="image\EventsPageImg\123.png" />
+    <Content Include="image\EventsPageImg\2.png" />
+    <Content Include="image\EventsPageImg\3.png" />
+    <Content Include="image\EventsPageImg\4.png" />
+    <Content Include="image\EventsPageImg\5.png" />
+    <Content Include="image\EventsPageImg\6.png" />
+    <Content Include="image\EventsPageImg\7.png" />
+    <Content Include="image\EventsPageImg\8.png" />
+    <Content Include="image\EventsPageImg\9.png" />
+    <Content Include="image\EventsPageImg\Background.png" />
+    <Content Include="image\EventsPageImg\Background1.png" />
+    <Content Include="image\EventsPageImg\Background2.png" />
+    <Content Include="image\EventsPageImg\Background3.png" />
+    <Content Include="image\EventsPageImg\D790D799D7A8D795D7A2D799D79D-D7A7D7A6D7A4D7AA2.jpeg" />
+    <Content Include="image\EventsPageImg\DSC8043-scaled.jpg" />
+    <Content Include="image\EventsPageImg\DSC8596-scaled.jpg" />
+    <Content Include="image\EventsPageImg\DSC_0411-scaled.jpg" />
+    <Content Include="image\EventsPageImg\Layer_1.png" />
+    <Content Include="image\EventsPageImg\Layer_2.png" />
+    <Content Include="image\HomePageImg\2-1-s1-825x1024.png" />
+    <Content Include="image\HomePageImg\9.png" />
+    <Content Include="image\HomePageImg\Background1.png" />
+    <Content Include="image\HomePageImg\ezgif-frame-007.png" />
+    <Content Include="image\HomePageImg\flas-300x67.png" />
+    <Content Include="image\HomePageImg\flas.png" />
+    <Content Include="image\HomePageImg\ice_cream.jpg" />
+    <Content Include="image\HomePageImg\ice_cream.png" />
+    <Content Include="image\HomePageImg\ice_cream1.jpg" />
+    <Content Include="image\HomePageImg\ice_cream1.png" />
+    <Content Include="image\HomePageImg\icons8-cake-64.png" />
+    <Content Include="image\HomePageImg\icons8-glyph-96.png" />
+    <Content Include="image\HomePageImg\new-fff-894x1024.png" />
+    <Content Include="image\HomePageImg\with-fresh-toppings.png" />
+    <Content Include="image\ourStoryPageImg\D792D79CD799D793D795D7AA-D7A1D795D7A8D791D794-scaled.jpg" />
+    <Content Include="image\ourStoryPageImg\D794D795D795D7A4D79C-D791D79CD792D799-scaled.jpg" />
+    <Content Include="image\ourStoryPageImg\D794D7A1D799D7A4D795D7A8-D7A9D79CD7A0D795-300x150.png" />
+    <Content Include="image\ourStoryPageImg\D794D7A1D799D7A4D795D7A8-D7A9D79CD7A0D795.png" />
+    <Content Include="image\ourStoryPageImg\D794D7A9D799D799D7A7D799D79D-D7A9D79CD7A0D795-scaled.jpg" />
+    <Content Include="image\ourStoryPageImg\D799D795D792D795D7A8D798-D791D799D795-3-D7A9D795D79ED79F-scaled.jpg" />
+    <Content Include="image\ourStoryPageImg\D79ED790D7A8D796-D7A4D7A8D795D796D79F-D79CD7A1D799D7A4D795D7A8-D7A9D79CD7A0D795.jpg" />
+    <Content Include="image\ourStoryPageImg\D7A2D795D792D795D7AA-D792D79CD799D793D794-scaled.jpg" />
+    <Content Include="image\TastePageImg\aspraso.png" />
+    <Content Include="image\TastePageImg\ChocolatBelgi.png" />
+    <Content Include="image\TastePageImg\chocolatMarir.png" />
+    <Content Include="image\TastePageImg\ChokoladMilk.png" />
+    <Content Include="image\TastePageImg\dovdevanim.png" />
+    <Content Include="image\TastePageImg\fistok-150x150.png" />
+    <Content Include="image\TastePageImg\fistok.png" />
+    <Content Include="image\TastePageImg\fistukMilk.png" />
+    <Content Include="image\TastePageImg\fororoMilk.png" />
+    <Content Include="image\TastePageImg\froro.png" />
+    <Content Include="image\TastePageImg\karmel.png" />
+    <Content Include="image\TastePageImg\kinderMilk.png" />
+    <Content Include="image\TastePageImg\limonana.png" />
+    <Content Include="image\TastePageImg\lotos.png" />
+    <Content Include="image\TastePageImg\Mango.png" />
+    <Content Include="image\TastePageImg\Mastik.png" />
+    <Content Include="image\TastePageImg\menta.png" />
+    <Content Include="image\TastePageImg\oreo.png" />
+    <Content Include="image\TastePageImg\Pasiflora.png" />
+    <Content Include="image\TastePageImg\pekan.png" />
+    <Content Include="image\TastePageImg\PerotYahar.png" />
+    <Content Include="image\TastePageImg\refalo.png" />
+    <Content Include="image\TastePageImg\romZhimukim.png" />
+    <Content Include="image\TastePageImg\tofiMilk.png" />
+    <Content Include="image\TastePageImg\Tut.png" />
+    <Content Include="image\TastePageImg\tutBanana.png" />
+    <Content Include="image\TastePageImg\vanil.png" />
+    <Content Include="image\TastePageImg\vanilEtalki.png" />
+    <Content Include="javaScript\Banch.js" />
+    <Content Include="javaScript\Event.js" />
+    <Content Include="javaScript\General.js" />
+    <Content Include="javaScript\Home.js" />
+    <Content Include="javaScript\OurStory.js" />
+    <Content Include="OurStoryPage.html" />
+    <Content Include="styleSheet\BanchStyle.css" />
+    <Content Include="image\BanchesPageImg\BneyBrak.jpeg" />
+    <Content Include="image\BanchesPageImg\Chevron.jpeg" />
+    <Content Include="image\BanchesPageImg\D7A1D7A0D799D7A4D799D79D-300x150.png" />
+    <Content Include="image\BanchesPageImg\D7A1D7A0D799D7A4D799D79D.png" />
+    <Content Include="ContactPage.html" />
+    <Content Include="image\BanchesPageImg\GivatShmuel.jpeg" />
+    <Content Include="image\BanchesPageImg\gvaBinyamin.jpeg" />
+    <Content Include="image\BanchesPageImg\Hameyasdim.jpeg" />
+    <Content Include="image\BanchesPageImg\Herzhel.jpeg" />
+    <Content Include="image\BanchesPageImg\KanfayNesharim.png" />
+    <Content Include="image\BanchesPageImg\KfarEzhion.png" />
+    <Content Include="image\BanchesPageImg\logo-poweqlhp5hema0ffdnicw06ijl949cqs8m2u2jogdm.jpg" />
+    <Content Include="image\BanchesPageImg\magicKass-.jpeg" />
+    <Content Include="image\BanchesPageImg\makabim.jpeg" />
+    <Content Include="image\BanchesPageImg\malcha.jpeg" />
+    <Content Include="image\BanchesPageImg\Paharan.png" />
+    <Content Include="image\BanchesPageImg\PisgatZeav.jpeg" />
+    <Content Include="image\BanchesPageImg\SariYisrael.png" />
+    <Content Include="image\BanchesPageImg\Sderot.jpeg" />
+    <Content Include="image\BanchesPageImg\sinma.jpeg" />
+    <Content Include="image\BanchesPageImg\telephone-handle-silhouette.png" />
+    <Content Include="image\BanchesPageImg\telephone-handle-silhouette1.png" />
+    <Content Include="image\BanchesPageImg\vector11_1.png" />
+    <Content Include="image\BanchesPageImg\yafo.png" />
+    <Content Include="image\BanchesPageImg\ZeitShemen.jpeg" />
+    <Content Include="image\ContactPageImg\D7A6D795D7A8-D7A7D7A9D7A8.png" />
+    <Content Include="EventsPage.html" />
+    <Content Include="image\EventsPageImg\אירועים-בקצפת-1024x901.jpg" />
+    <Content Include="image\EventsPageImg\הזמנת-אירועים.png" />
+    <Content Include="image\GeneralImg\facebook.png" />
+    <Content Include="image\GeneralImg\fax-machine.png" />
+    <Content Include="image\GeneralImg\gift.png" />
+    <Content Include="image\GeneralImg\instagram %282%29.png" />
+    <Content Include="image\GeneralImg\phone-call.png" />
+    <Content Include="image\GeneralImg\telephone.png" />
+    <Content Include="image\HomePageImg\BACK2.jpg" />
+    <Content Include="image\HomePageImg\Background copy.png" />
+    <Content Include="image\HomePageImg\branch %281%29.png" />
+    <Content Include="image\HomePageImg\branch.png" />
+    <Content Include="image\HomePageImg\ezgif-frame-007.jpg" />
+    <Content Include="HomePage.html" />
+    <Content Include="image\HomePageImg\ice-cream %281%29.png" />
+    <Content Include="image\HomePageImg\ice-cream.png" />
+    <Content Include="image\HomePageImg\old-typical-phone.png" />
+    <Content Include="image\HomePageImg\phone-call.png" />
+    <Content Include="image\HomePageImg\piece-of-cake.png" />
+    <Content Include="image\GeneralImg\small-sliftizk.jpg" />
+    <Content Include="styleSheet\ContactStyle.css" />
+    <Content Include="styleSheet\EventsStyle.css" />
+    <Content Include="styleSheet\HomeStyle.css" />
+    <Content Include="styleSheet\OurStoryStyle.css" />
+    <Content Include="styleSheet\sticky.css" />
+    <Content Include="styleSheet\StyleSheet.css" />
+    <Content Include="TastePage.html" />
+    <Content Include="image\TastePageImg\D794D798D7A2D79ED799D79D-600x224.png" />
+    <Content Include="styleSheet\TasteStyle.css" />
+    <Content Include="Web.config" />
+    <Content Include="image\GeneralImg\גלידריית_קצפת.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\HomePageImg\packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>51052</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44385/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

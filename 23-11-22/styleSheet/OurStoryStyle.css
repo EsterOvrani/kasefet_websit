@@ -1,0 +1,75 @@
+﻿body {
+}
+
+p {
+    color: #000000B3;
+    font-family: "Assistant",Sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding:0px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 32%;
+    max-width: 33%;
+    margin: 0px;
+    justify-content:center;
+    padding:0px;
+}
+
+    .column img {
+        margin: 0px;
+        vertical-align: middle;
+        width: 100%;
+    }
+
+/*הגדרות לתמונה הגדולה*/
+#Wrapper {
+    box-sizing: border-box; /* border רוחב-גובה האלמנט - כולל */
+    width: 100%;
+    height: 950px;
+    display: none; /*לא נראה בתחילה*/
+    position: fixed;
+    top: 0px;
+    right:0px;
+    z-index: 30;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+}
+
+#BigImg {
+    width: 50%;
+    height: auto;
+    margin:0px;
+}
+
+#x {
+    width: 30px;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+}
+
+/*אלמנט המונח מעל כל הגלריה*/
+#divBig {
+    display: none; /*מוסתר בהתחלה*/
+    position: absolute;
+    /*    position:fixed;*/
+    left: 0;
+    top: 0;
+    width: 100%;
+    /*height: 100%;*/ /*מכסה רק גודל מסך לפני הגלילה*/
+    height: 300%; /*ערך גבוה - שיכסה את הגלריה גם בגלילה*/
+    background-color: black;
+    opacity: 0.7;
+    z-index: 20;
+}
+/*סוף הגדרות לתמונה הגדולה*/

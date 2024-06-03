@@ -1,0 +1,153 @@
+﻿body {
+    background-image: url('../image/HomePageImg/BACK2.jpg');
+    background-attachment: fixed;
+
+}
+
+#NavHeader {
+    width: 100%;
+    height: 950px;
+    margin: 0px;
+    padding: 0px;
+    background-image: url('../image/HomePageImg/ezgif-frame-007.png');
+    background-size: cover;
+    background-color: transparent;
+}
+
+nav {
+    background-color: transparent;
+    height: 25%;
+}
+
+    nav ul li a {
+        color: white;
+    }
+
+button,
+button:after,
+button:before {
+    width: 275px;
+    height: 246px;
+    background-color: transparent;
+    margin: 10px;
+    border: solid;
+    border-color: white;
+    border-width: 1px;
+    transition: all .2s;
+}
+
+    button:hover {
+        background-color: #592B17;
+        border: none;
+    }
+
+    button div {
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+        color: white;
+        background-color: transparent;
+    }
+
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 65%;
+    background-color: transparent;
+}
+
+img {
+    margin: 0px;
+    width: 70%;
+}
+
+p {
+    font-family: "Assistant",Sans-serif;
+    font-size: 1.3em;
+    font-weight: 400;
+}
+
+section p {
+    font-size: 18.2px;
+}
+
+article section {
+    width: 100%;
+}
+
+#btnSize1,
+#btnSize1:before,
+#btnSize1:after {
+    background-color: #592B17;
+    color: white;
+    font-size: 18px;
+    width: 55%;
+    height: 50px;
+    transition: all .2s;
+    display: block;
+}
+
+#btnSize2,
+#btnSize2:before,
+#btnSize2:after {
+    background-color: #592B17;
+    color: white;
+    font-size: 18px;
+    width: 30%;
+    height: 50px;
+    transition: all .2s;
+    display: block;
+}
+
+
+    #btnSize2:hover {
+        width: 35%;
+        height: 55px;
+    }
+
+#btnSize1:hover {
+    width: 60%;
+    height: 55px;
+}
+
+hr {
+    width: 100%;
+    height: 10px;
+    background-color: #592B17;
+    margin: 0px 0px -1px 0px;
+}
+
+article section div {
+    width: 50%;
+    margin: 0px;
+}
+
+h2 {
+    font-family: "Assistant",Sans-serif;
+    font-size: 72px;
+    font-weight: 700;
+}
+
+#articalTextDiv {
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+}
+
+#articalSec3 {
+    width: 100%;
+    height: fit-content;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+}

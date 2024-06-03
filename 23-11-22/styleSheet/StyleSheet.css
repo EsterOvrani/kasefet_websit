@@ -1,0 +1,364 @@
+﻿
+
+body {
+    direction: rtl;
+    font-family: Assistant,sans-serif;
+}
+
+nav {
+    width: 100%;
+    height: 150px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    /*position: fixed;*/
+    /*font-family: montserrat, arial, verdana;*/
+    z-index: 2;
+    margin: 0px 0px 0px 20px;
+}
+
+    nav > ul {
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        display: flex;
+    }
+
+
+    nav ul li a {
+        display: block;
+        padding: 15px;
+        text-decoration: none;
+        color: #000000;
+        text-transform: uppercase;
+        margin: 0px 15px;
+    }
+
+        nav ul li a,
+        nav ul li a:after,
+        nav ul li a:before {
+            transition: all .5s;
+        }
+
+            nav ul li a:hover {
+                color: burlywood;
+            }
+
+
+footer ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    align-content: flex-start;
+    justify-content: center;
+    padding: 0px;
+}
+
+    footer ul li {
+        width: 50%;
+        height: 50px;
+        display: block;
+        color: #000000;
+        margin: 0px;
+    }
+
+        footer ul li a {
+            text-decoration: none;
+        }
+
+
+
+header {
+    display: flex;
+    width: 100%;
+    height: 250px;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    /*  text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    height: 300px;*/
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    margin: 20px;
+    height: fit-content;
+    width: 80%;
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article section {
+    justify-content: right;
+    width: 65%;
+}
+
+
+div {
+    height: fit-content;
+    width: 30%;
+    margin: 0px 10px;
+    display: block;
+}
+
+    div section {
+        width: 100%;
+        height: fit-content;
+    }
+
+
+
+footer {
+    width: 100%;
+    font-family: montserrat, arial, verdana;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFDF5;
+}
+
+
+nav img {
+    width: 150px;
+    height: auto;
+    margin: 20px 70px;
+}
+
+table {
+    margin-right: 25%;
+}
+
+input[type=text], input[type=button], input[type=email], input[type=tel] {
+    border-radius: 50px;
+    display: block;
+    width: 80%;
+    height: 50px;
+    margin: 5px auto;
+    font-size: 20px;
+    padding: 6px 16px;
+    border: none;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    font-family: Assistant,sans-serif;
+}
+
+
+
+
+/*כפתור תפריט*/
+.menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 250ms ease;
+    cursor: pointer;
+    z-index: 200;
+}
+    /*עיצוב הכפתור*/
+    .menu span {
+        position: relative;
+        display: block;
+        width: 50%;
+        height: 2px;
+        background-color: #444;
+        float: right;
+        transform-origin: center center;
+        transition: transform 250ms ease;
+        z-index: 200;
+    }
+        /*אנימציה כפתור*/
+        .menu span:nth-of-type(1) {
+            transform: translateY(-5px);
+        }
+
+        .menu span:nth-of-type(3) {
+            transform: translateY(5px);
+        }
+/*checkbox*/
+#menu {
+    display: none;
+}
+
+    #menu:checked ~ .menu {
+        background-color: transparent;
+        transform: rotate(360deg);
+        transition: transform 250ms ease;
+    }
+
+        #menu:checked ~ .menu span {
+            background-color: white;
+            transition: transform 250ms ease;
+        }
+
+            #menu:checked ~ .menu span:nth-of-type(1) {
+                transform: translateY(1px) rotate(45deg);
+            }
+
+            #menu:checked ~ .menu span:nth-of-type(2) {
+                display: none;
+            }
+
+            #menu:checked ~ .menu span:nth-of-type(3) {
+                transform: translateY(-1px) rotate(-45deg);
+            }
+
+    #menu:checked ~ .nav {
+        transition: right 500ms ease;
+        right: 0px;
+        width: 100%;
+    }
+
+    #menu:checked ~ main {
+        transform: translateX(250px);
+        transition: transform 500ms ease;
+    }
+/*תפריט צד*/
+.nav {
+    position: fixed;
+    top: 0;
+    right: -210px;
+    width: 0px;
+    height: 100vh;
+    margin: 0;
+    padding-top: 50px;
+    opacity: 0.9;
+    background-color: #3d3838;
+    background-blend-mode: darken;
+    transition: right 500ms ease;
+    z-index: 0;
+    text-align: center;
+}
+    /*רשימה תפריט צד*/
+    .nav ul {
+        position: relative;
+        list-style-type: none;
+        padding: 0;
+    }
+/*רשימה ראשית*/
+#bar {
+    margin: 100px 0;
+}
+/*פריטים ברשימה*/
+.nav ul li {
+    position: relative;
+    display: block;
+}
+    /*קישורים ברשימה*/
+    .nav ul li a {
+        position: relative;
+        display: block;
+        margin: 0;
+        padding: 15px 20px;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+        /*קישורים בתפריט*/
+        .nav ul li a:before {
+            position: absolute;
+            content: "";
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 100%;
+            transition: width 250ms ease;
+            z-index: -1;
+        }
+
+
+        .nav ul li a:hover {
+            color: burlywood;
+        }
+
+            .nav ul li a:hover:before {
+                width: 100%;
+                height: 100%;
+                transition: width 250ms ease;
+            }
+
+
+#myBtn {
+    display: inline; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+    #myBtn:hover {
+        background-color: #555; /* Add a dark-grey background on hover */
+    }
+
+@media screen and (max-width: 758px) {
+    .menu {
+        display: flex;
+    }
+}
+
+@media screen and (min-width:758px) {
+    .nav {
+        display: none;
+    }
+}
+
+
+/*תפריט עליון*/
+#Navigationbarup {
+    overflow: hidden;
+}
+
+@media screen and (max-width: 758px) {
+
+    #Navigationbarup {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    footer > section > div {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    footer > section > div {
+        width: 90%;
+    }
+}
+
+
+

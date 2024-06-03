@@ -1,0 +1,50 @@
+﻿body {
+    background-color: #FFFDF5;
+}
+article section div,
+article section div:after,
+article section div:before {
+    width: 22%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    margin: 0px 1.5% 10px 1.5%;
+    transition: all .5s;
+}
+article section div:hover {
+    box-shadow: 0 0 2px 2px #888;
+    border-radius:20px;
+}
+
+div .taste {
+    display: block;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+}
+article  img {
+    width: 80%;
+    height: auto;
+    margin: 0px;
+    border-radius:110px;
+}
+
+.responsive {
+    width: 22%;
+}
+
+@media only screen and (max-width: 700px) {
+    .responsive {
+        width: 29%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .responsive {
+        width: 44%;
+    }
+}
